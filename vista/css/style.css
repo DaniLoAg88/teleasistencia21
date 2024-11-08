@@ -1,0 +1,245 @@
+/* GENERAL */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    /*margin: 0;*/
+    /*padding: 20px;*/
+    background-color: #f4f4f4;
+}
+
+h1, h2 {
+    text-align: center;
+    color: #333;
+}
+
+/* Estilo de la cabecera */
+
+.menu {
+    margin: 0;
+    padding-left: 0px;
+    background-color: #00A6ED;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+}
+
+.menu a {
+    text-decoration: none;
+    color: #f2f2f2;
+    font-size: 20px;
+}
+
+.menu a:hover {
+    color: #0050aa;
+}
+
+#navLetras {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 0 50px;
+    gap: 4em;
+}
+
+
+/* formularios */
+.centrado {
+    text-align: center;
+}
+
+.flex{
+    display: flex;
+    align-items: center;
+
+}
+
+.formulario {
+    background-color: #fff;
+    padding: 25px 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    width: 60%;
+    margin: auto;
+    height: 600px;
+}
+
+.tabla{
+    background-color: #fff;
+    padding: 25px 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    width: 60%;
+    margin: auto;
+}
+
+.listado{
+        background-color: #fff;
+        padding: 25px 20px;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        width: 60%;
+        margin: auto;
+}
+
+.dosColumnas {
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.unaColumna {
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+.formulario > div {
+    flex-basis: 48%;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.selectDashboard {
+    width: 60%;
+}
+
+input[type="text"], select, input[type="date"] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+
+
+input[type="text"]:focus, select:focus {
+    outline: none;
+    border-color: #007bff;
+    box-shadow: 0 0 0 2px rgba(0, 123, 255, .25);
+}
+
+.enviarBoton {
+    width: 60%;
+    margin: auto;
+    text-align: center;
+    padding: 0 25px;
+}
+
+.boton {
+    padding: 15px;
+    background-color: #00A6ED;
+    color: white;
+    cursor: pointer;
+    border-radius: 15px;
+    border: none;
+}
+
+.botonDesactivado {
+    padding: 15px;
+    background-color: #d2d2d2;
+    color: black;
+    cursor: none;
+}
+
+.error {
+    color: darkred;
+}
+
+@media (max-width: 768px) {
+    .formulario > div {
+        flex-basis: 100%;
+    }
+
+    .formulario, .enviarBoton {
+        width: 95%;
+        height: auto;
+    }
+}
+
+.container {
+    padding-top: 25px;
+}
+
+.padding{
+    padding: 25px;
+}
+
+.padding2{
+    padding: 15px;
+}
+
+
+/* estilo dashboard */
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+th {
+    background-color: #f4f4f4;
+    font-weight: bold;
+    /*padding: 10px 0;*/
+}
+
+td{
+    /*display: flex;*/
+    /*border: none;*/
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+
+}
+
+.btn {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 3px;
+    color: #fff;
+    font-size: 0.9em;
+    cursor: pointer;
+    transition: background 0.3s;
+
+}
+
+.btn.editar {
+    background-color: #4CAF50; /* Verde */
+}
+
+.btn.eliminar {
+    background-color: #f44336; /* Rojo */
+}
+
+.btn.ver {
+    background-color: #2196F3; /* Azul */
+}
+
+.btn:hover {
+    opacity: 0.8;
+}
+
+input[type="radio"]{
+
+}

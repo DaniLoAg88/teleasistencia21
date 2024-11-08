@@ -37,8 +37,8 @@ include_once "../modelo/conexion.php";
                 </p>
                 <!--ESTADO CIVIL-->
                 <p>
-                    <label for="ecivil">Estado Civil</label>
-                    <select name="ecivil" id="ecivil">
+                    <label for="idEstadoCivil">Estado Civil</label>
+                    <select name="idEstadoCivil" id="idEstadoCivil">
                         <option value=""></option>
                         <?php
                         $link=conectar();
@@ -89,8 +89,8 @@ include_once "../modelo/conexion.php";
                 </p>
                 <!--PROVINCIA-->
                 <p>
-                    <label for="provincia">Provincia</label>
-                    <select name="provincia" id="provincia">
+                    <label for="idProvincia">Provincia</label>
+                    <select name="idProvincia" id="idProvincia">
                         <option value=""></option>
                         <?php
                         $link=conectar();
@@ -113,8 +113,9 @@ include_once "../modelo/conexion.php";
                     </select>
                 </p>
             </div>
+            </div>
             <!--BOTON-->
-            <div class="enviarBoton">
+            <div class="enviarBoton container">
                 <input type="submit" name="enviarFormulario" value="Siguiente →" class="boton">
                 <p class="error">
                     <?php if (!empty($_GET["errores"])) {

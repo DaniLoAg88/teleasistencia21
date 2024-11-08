@@ -59,3 +59,14 @@ function validarCpostal($cp)
         $errores[] = "<p class='error'>El codigo postal no puede estar vacio y debe contener 5 numeros</p>";
     }
 }
+
+/** * @param $filtro
+ * * @return void
+ * * Función que recibe la opcion de filtro seleccionada. Insertará un error en la variable global en caso de estar vacío. */
+function validarFiltro($filtro)
+{
+    global $errores;
+    if (empty($filtro)) {
+        $errores[] = "<p class='error'>Debe seleccionar un filtro de busqueda</p>";
+    }
+}
